@@ -1,0 +1,142 @@
+/* body{
+  font-size: 1.4rem;
+}
+
+.icon-img{
+  width: 4rem;
+  height: 70%;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Rubik&display=swap');
+
+
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background-color: #b2f2bb;
+  background: linear-gradient(145deg) no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  width: 400px;
+  height: 850px;
+  background-color: #ffffff;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.container .header{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px 10px;
+  margin: 0.5rem;
+  justify-content: space-between;
+}
+
+.content-name{
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin: 1rem; */
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+}
+
+.profile-img{
+  border-radius: 50%;
+  width: 90px;
+}
+
+.add-icon{
+  display: inline-block;
+  position: absolute;
+  right: 900px;
+  bottom: 78%;
+}
+
+.follower:not(:nth-child(3)){
+  border-right: 1px solid #333;
+  height: 20px;
+}
+
+.follower p{
+  font-size: 0.7rem;
+  color: #555;
+  padding: 0.2rem;
+}
+
+.followers,
+.follower{
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem 0rem 0.9rem;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: repeat(3,1fr); */
+}
+
+.down-side-name{
+  text-align: center;
+  padding: 0.4rem
+}
+
+.short-heading-content{
+  margin: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.boutem-bar .bar-title,
+.midil-bar .bar-title{
+  list-style: none;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px 10px;
+  margin: 0.5rem;
+  justify-content: space-between;
+}
+
+
+.all-img{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 0.4rem;
+  row-gap: 0.2rem;
+  margin-top: 10px;
+}
+
+.boutem-bar .bar-title{
+  padding: 3.4rem 0rem 1.4rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+
+.inner-img{
+  overflow: hidden;
+}
