@@ -141,12 +141,32 @@ body{
   margin-top: 10px;
 }
 
-/* .boutem-bar .bar-title{
-  padding: 3.4rem 0rem 1.4rem;
-  margin: 0rem 0rem 0rem 0rem;
-} */
+.boutem-bar .bar-title{
+  /* padding: 3.4rem 0rem 1.4rem; */
+  /* margin: 0rem 0rem 0rem 0rem; */
+}
 
 
 .inner-img{
   overflow: hidden;
+}
+
+
+/* make responsive */
+
+
+
+@media (max-width:32em){
+  .container{
+    width: 300px;
+    margin-top: 0;
+    height: 100%;
+  }
+  .all-img{
+    margin-left: 1rem;
+    max-width: 200%;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:0.1px;
+    row-gap: 0.2px;   
+  }
 }

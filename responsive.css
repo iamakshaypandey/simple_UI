@@ -13,33 +13,41 @@ High-res laptop or desktop: 1920 x 1080 */
 
 
 /* 1344 px  smaller screen laptop */
-@media (max-width:84em){
-  
-}
+/* @media (max-width:84em){
+  .container{
+    margin-bottom: auto;
+  }
+
+} */
 
 
 /*/*landscape tablets screen 1200px */
 
-@media(max-width:75em){
+/* @media(max-width:75em){
 
-}
+} */
 
 
 
 /* for tablats */
 
-@media(max-width:59em){
+/* @media(max-width:59em){
 
-}
+} */
 
 /*below 704px smaller tablets */
-
+/* 
 @media(max-width:44em){
 
-}
+} */
 
 /* using phone */
-
-@media(max-width:34em){
-
-}
+/* @media (max-width:32em){
+  body{
+    background-color: orangered;
+  }
+  .container{
+    width: 300px;
+    margin-top: 0;
+  }
+} */
