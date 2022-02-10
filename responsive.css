@@ -1,0 +1,45 @@
+/* media quries make website responsiv */
+/* 
+Common screen sizes
+Mobile: 360 x 640
+Mobile: 375 x 667
+Mobile: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+
+
+/* 1344 px  smaller screen laptop */
+@media (max-width:84em){
+  
+}
+
+
+/*/*landscape tablets screen 1200px */
+
+@media(max-width:75em){
+
+}
+
+
+
+/* for tablats */
+
+@media(max-width:59em){
+
+}
+
+/*below 704px smaller tablets */
+
+@media(max-width:44em){
+
+}
+
+/* using phone */
+
+@media(max-width:34em){
+
+}
