@@ -20,7 +20,7 @@
 html{
   /* height: 100%; */
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body{
@@ -31,7 +31,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
@@ -44,6 +44,7 @@ body{
   flex-direction: column;
   margin-top: 1rem;
   padding: 1rem;
+  /* overflow: hidden; */
 }
 
 .container .header{
@@ -105,7 +106,7 @@ body{
   padding: 0.4rem 1.2rem 0rem 0.9rem;
 }
 
-.grid{
+.one-line{
   display: flex;
   justify-content: center;
 
@@ -133,6 +134,12 @@ body{
   margin: auto;
   justify-content: space-between;
 }
+/* 
+.position-fix-midil{
+  position: sticky ;
+  top: 30px;
+  bottom: 30px;
+} */
 
 
 .all-img{
@@ -179,6 +186,12 @@ body{
   }
   .images{
     width: 100%;
+  }
+
+  .position-fix{
+    position: sticky !important;
+    top: 0;
+    bottom: 0;
   }
   
 }
@@ -281,7 +294,7 @@ body{
     width: 100%;
   }
   .all-img{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
   .boutem-bar .bar-title,
   .midil-bar .bar-title{
@@ -289,6 +302,12 @@ body{
   }
   .icon-img{
     width: 100%;
+  }
+
+  .position-fix{
+    position: sticky !important;
+    top: 0;
+    bottom: 0;
   }
   
 }
