@@ -25,8 +25,8 @@ body{
 
 .container{
   border: 1px solid #adb5bd;
-  width: 400px;
-  height: 850px;
+  width: 25rem;
+  height: 51rem;
   background-color: #ffffff;
   flex-direction: column;
 }
@@ -41,6 +41,7 @@ body{
   margin: 0.5rem;
   justify-content: space-between;
 }
+
 
 .content-name{
   font-size: 1.2rem;
@@ -71,10 +72,6 @@ body{
   bottom: 0;
 }
 
-.follower:not(:nth-child(3)){
-  border-right: 1px solid #333;
-  height: 20px;
-}
 
 .follower p{
   font-size: 0.7rem;
@@ -82,18 +79,34 @@ body{
   padding: 0.2rem;
 }
 
-.followers,
-.follower{
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.4rem 1.2rem 0rem 0.9rem;
-}
-
 .one-line{
   display: flex;
   justify-content: center;
+}
+
+
+
+.list-child{
+  text-align: center;
+  list-style: none;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 0rem 0.5rem 0rem 0.5rem;
 
 }
+
+.dark{
+  font-size: 1rem;
+}
+.font{
+  font-size: 0.8rem;
+  color:#a3a5a7;
+}
+
+.vertical-bar{
+  padding: 1rem;
+}
+
 
 .down-side-name{
   text-align: center;
@@ -112,9 +125,15 @@ body{
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  padding: 1rem;
+  padding: 0.5rem 0  0;
   width: 103%;
   justify-content: space-around;
+  z-index: 4;
+}
+
+.boutem-bar,
+.midil-bar{
+  overflow: hidden;
 }
 
 
@@ -123,6 +142,7 @@ body{
   grid-template-columns: repeat(3,1fr);
   column-gap: 0.4rem;
   row-gap: 0.2rem;
+  padding: 1rem;
 }
 
 .position-fix{
@@ -136,7 +156,6 @@ body{
   overflow: hidden;
 }
 
-.icon-img{}
 
 
 /* make responsive */
@@ -246,7 +265,7 @@ body{
 
   .boutem-bar .bar-title,
   .midil-bar .bar-title{
-    padding: 1rem;
+    padding: 0.4rem;
   } 
 }
 
@@ -259,6 +278,7 @@ body{
     height: 100%;
     margin-bottom: 0;
     margin-left: 0;
+    padding-bottom: 0;
   }
   .images{
     width: 100%;
@@ -268,8 +288,9 @@ body{
   }
   .boutem-bar .bar-title,
   .midil-bar .bar-title{
-    padding: 1.4rem;
+    padding: 0.4rem;
   }
+
   .icon-img{
     width: 100%;
   }
