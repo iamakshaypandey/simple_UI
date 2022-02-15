@@ -91,7 +91,7 @@ body{
   list-style: none;
   line-height: 1.5rem;
   font-weight: 500;
-  padding: 0rem 0.5rem 0rem 0.5rem;
+  padding: 0rem 1rem 0rem 1rem;
 
 }
 
@@ -104,7 +104,9 @@ body{
 }
 
 .vertical-bar{
-  padding: 1rem;
+  border-left:1px solid gray;
+  height: 1rem;
+  margin-top: 0.8rem;
 }
 
 
