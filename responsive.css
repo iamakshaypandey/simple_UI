@@ -1,83 +1,52 @@
-/* media quries make website responsiv */
-/* 
-Common screen sizes
-Mobile: 360 x 640
-Mobile: 375 x 667
-Mobile: 360 x 720
-iPhone X: 375 x 812
-Pixel 2: 411 x 731
-Tablet: 768 x 1024
-Laptop: 1366 x 768
-High-res laptop or desktop: 1920 x 1080 */
-
-
-
-/* 1344 px  smaller screen laptop */
-/* @media (max-width:84em){
-  .container{
-    margin-bottom: auto;
-  }
-
-} */
-
-
-/*/*landscape tablets screen 1200px */
-
-/* @media(max-width:75em){
-
-} */
-
-
-
-/* for tablats */
-
-/* @media(max-width:59em){
-
-} */
-
-/*below 704px smaller tablets */
-/* 
-@media(max-width:44em){
-
-} */
-
-/* using phone */
-/* @media (max-width:32em){
-  body{
-    background-color: orangered;
-  }
-  .container{
-    width: 300px;
-    margin-top: 0;
-  }
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Rubik&display=swap');
 
 
 *{
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+
 
 .container{
-  border: 1px solid #555;
-  width: 20%;
-  /* height: 10%; */
-
+  border: 1px solid #adb5bd;
+  width: 25rem;
+  height: 50rem;
+  background-color: #ffffff;
+  flex-direction: column;
 }
 
-.header{
+
+.container .header{
+  
   display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px 10px;
+  margin: 0.5rem;
   justify-content: space-between;
 }
 
+
+.content-name{
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
 
 .profile{
   display: flex;
@@ -89,12 +58,10 @@ body{
   
 }
 
-
 .profile-img{
   border-radius: 50%;
   width: 90px;
 }
-
 
 .add-icon{
   display: inline-block;
@@ -105,32 +72,42 @@ body{
 }
 
 
-.follower:not(:nth-child(3)){
-  border-right: 1px solid #333;
-  height: 40px;
-}
-
-
-
 .follower p{
   font-size: 0.7rem;
   color: #555;
   padding: 0.2rem;
 }
 
-
-.followers,
-.follower{
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.4rem 1.2rem 0rem 0.9rem;
-}
-
 .one-line{
   display: flex;
   justify-content: center;
+}
+
+
+
+.list-child{
+  text-align: center;
+  list-style: none;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 0rem 1rem 0rem 1rem;
 
 }
+
+.dark{
+  font-size: 1rem;
+}
+.font{
+  font-size: 0.8rem;
+  color:#a3a5a7;
+}
+
+.vertical-bar{
+  border-left:1px solid gray;
+  height: 1rem;
+  margin-top: 0.8rem;
+}
+
 
 .down-side-name{
   text-align: center;
@@ -142,7 +119,6 @@ body{
   text-align: center;
   font-size: 1rem;
 }
-
 .boutem-bar .bar-title,
 .midil-bar .bar-title{
   list-style: none;
@@ -150,13 +126,57 @@ body{
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  padding: 10px 10px 10px 10px;
+  padding: 0.5rem 0  0;
   width: 103%;
-  margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
+  z-index: 4;
 }
 
-/* 
-@media screen (max-hight:) {
-  
-} */
+.boutem-bar,
+.midil-bar{
+  overflow: hidden;
+}
+
+
+.all-img{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 0.4rem;
+  row-gap: 0.2rem;
+  padding: 1rem;
+}
+
+.position-fix-midil{
+  position: sticky !important;
+  top: 0;
+}
+
+.position-fix-boutem{
+  position: sticky !important;
+  bottom: 0;
+}
+
+
+.inner-img{
+  overflow: hidden;
+}
+
+
+@media screen and (max-width:900px) and (min-width:481px) {
+ .container{
+   background-color: green;
+ }  
+}
+
+@media only screen and (max-width:480px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+.container{
+  background-color: royalblue;
+}  
+}

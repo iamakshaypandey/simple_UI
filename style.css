@@ -26,7 +26,7 @@ body{
 .container{
   border: 1px solid #adb5bd;
   width: 25rem;
-  height: 51rem;
+  height: 50rem;
   background-color: #ffffff;
   flex-direction: column;
 }
@@ -174,7 +174,7 @@ body{
   .all-img{
     /* margin-left: 0.4rem; */
     max-width: 200%;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap:0.2px;
     row-gap: 0.2px;   
   }
@@ -204,7 +204,7 @@ body{
   }
   .all-img{
     max-width: 200%;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap:0.4rem;
     row-gap: 0.2rem;   
   }
@@ -288,7 +288,7 @@ body{
   }
   .boutem-bar .bar-title,
   .midil-bar .bar-title{
-    padding: 0.4rem;
+    padding: 1.4rem;
   }
 
   .icon-img{
@@ -299,10 +299,14 @@ body{
     width: 100%;
   }
 
-  .position-fix{
+  .position-fix-midil{
     position: sticky !important;
     top: 0;
+  }
+  .position-fix-boutem{
+    position: sticky !important;
     bottom: 0;
   }
   
 }
+
