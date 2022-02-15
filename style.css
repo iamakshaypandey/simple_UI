@@ -147,9 +147,12 @@ body{
   padding: 1rem;
 }
 
-.position-fix{
+.position-fix-midil{
   position: sticky !important;
   top: 0;
+}
+.position-fix-boutem{
+  position: sticky !important;
   bottom: 0;
 }
 
@@ -182,9 +185,13 @@ body{
     width: 100%;
   }
 
-  .position-fix{
+  .position-fix-midil{
     position: sticky !important;
     top: 0;
+  }
+
+  .position-fix-boutem{
+    position: sticky !important;
     bottom: 0;
   }
   
@@ -212,9 +219,12 @@ body{
     width: 100%;
   }
 
-  .position-fix{
+  .position-fix-midil{
     position: sticky !important;
     top: 0;
+  }
+  .position-fix-boutem{
+    position: sticky;
     bottom: 0;
   }
 }
@@ -309,4 +319,3 @@ body{
   }
   
 }
-
