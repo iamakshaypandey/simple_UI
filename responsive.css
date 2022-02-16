@@ -271,18 +271,24 @@ body{
 }
 
 
-@media screen and (max-width:812px) and (min-width:280px){
+@media screen and (max-width:812px) and (min-width:320px){
   
   .container{
     width: 100%;
     border:none;
   }
   .boutem-bar{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
   }
 
 }
+
+
+
+
+
 
 
 
